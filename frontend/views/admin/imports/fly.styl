@@ -1,0 +1,120 @@
+/**
+* Fly CSS
+* @class fly
+* @module fly.css
+*/
+.ctn-fly
+	padding-top 68px
+	position relative
+	z-index 1
+	.flyrl-target.dishover-drop
+		background #FFF
+	.ui-draggable-dragging
+		background #FFF
+.ctn-flyRole
+	margin 18px auto 0
+	width 180px
+	&:first-child
+		margin-top 0
+	h3
+		color #FFF
+		font-size 19px
+		font-family family1
+		text-align center
+.flyrl-target
+	background #FFF
+	border 1 solid #FFF
+	min-height 26px
+	padding 8px
+	transition background .4s ease
+	width 162px
+	&.hover-drop
+		background #D7D7D7
+.fly-person
+	padding-left 9px
+	position relative
+	*zoom 1
+	&:before,&:after
+		display table
+		content ""
+		line-height 0
+	&:after
+		clear both
+	.fperson-state
+		background #00b570
+		border-radius 6px
+		height 6px
+		left 0
+		margin-top -3px
+		position absolute
+		top 50%
+		width 6px
+	.fperson-img
+		border-radius 3px
+		float left
+	.fperson-name
+		color #2f323b
+		float left
+		font-family family1
+		font-size 11px
+		height 26px
+		line-height 13px
+		margin-left 4px
+		overflow hidden
+		position relative
+		width 110px
+		word-wrap break-word
+	.icDeletePlt
+		margin-top -6px
+		position absolute
+		right 0
+		top 50%
+.group-flyEngineer
+	margin 18px auto 0
+	width 560px
+	.ctn-flyRole
+		float left
+		& + .ctn-flyRole
+			margin-left 10px
+	.ctn-flyRole
+		margin-top 0
+.group-flyTester
+	margin 40px 0 0
+	*zoom 1
+	&:before,&:after
+		display table
+		content ""
+		line-height 0
+	&:after
+		clear both
+	.ctn-flyRole
+		float left
+		width 184px
+		margin-top 0
+		& + .ctn-flyRole
+			margin-left 10px
+	.flyrl-target
+		width auto
+	.fly-person
+		background #f8f9f9
+		padding 8px 6px 8px 15px
+		& + .fly-person
+			margin-top 6px
+		.fperson-state
+			left 6px
+	.icDeletePlt
+		right 6px
+	.fperson-name
+		width 104px
+.flytest1
+	h3
+		color #ff5a19
+.flytest2
+	h3
+		color #00b570
+.flytest3
+	h3
+		color #00ace4
+.flytest4
+	h3
+		color #7a6356

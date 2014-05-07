@@ -1,0 +1,42 @@
+{
+	"compile":{
+		"ext":".styl",
+		"cmd":"stylus -c",
+		"cmdr":"-o",
+		"route":"../css/"
+	},
+	"layouts":{
+		"active":false
+	},
+	"views":{
+		"path":"./views",
+		"compile":{
+			"admin.styl":{
+				"helpers":{
+					"reset":"[@pp]reset.styl",
+					"plugins":[]
+				},
+				"includes":{
+					"vhelpers":["[@pp]resources.styl","[@pp]forms.styl","[@pp]sprites.styl"],
+					"layout":["[@pp]header.styl","[@pp]general.styl","[@pp]footer.styl"],
+					"imports":[]
+				}
+			}
+		}
+	},
+	"vars":{
+		"global":{
+			"styfluxFonts":"[@url]fonts/",
+			"routImgFancybox":"[@url]../img/fancybox/",
+			"routImgTipsy":"[@url]../img/",
+			"routImgLoader":"[@url]../img/"
+		},
+		"admin.styl":{
+			"routImg":"[@url]../img/"
+		}
+	},
+	"ignore":{
+		"layouts":["render"],
+		"views":["admin/vhelpers","admin/layout","admin/imports"]
+	}
+}
